@@ -5,7 +5,7 @@ public class Circle implements Shape {
     public Circle(double radius) throws Exception {
         r = radius;
         if(!check()){
-            throw new ArithmeticException("It's not a Circle!");
+            throw new ArithmeticException("It's not a circle!");
         }
     }
     public boolean check(){
@@ -15,11 +15,11 @@ public class Circle implements Shape {
         return true;
     }
     public double area() {
-        return((r/2)*(r/2)*3.14);
-    } 
+        return(r*r*Math.PI);
+    }
 
     public double perimeter() {
-        return r * 3.14;
+        return r * 2 * Math.PI;
     }
 
     public String toString() {
