@@ -27,9 +27,9 @@ public class InputOutput {
             try{
                 arr.add(ConstructShape(inf.nextLine()));
             }
-            catch(Exception e){
+            catch(IOException e){
                 inf.close();
-                throw new ArithmeticException();
+                throw e;
             }
         }
         inf.close();
