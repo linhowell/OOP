@@ -24,6 +24,6 @@ public class Rectangle implements Shape {
     }
 
     public String toString() {
-        return("Rectangle" + String.valueOf(h)+String.valueOf(w));
+        return("Rectangle" + " " + String.valueOf(h)+ " " +String.valueOf(w));
     }
 }
