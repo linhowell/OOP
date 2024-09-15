@@ -15,6 +15,7 @@ public class Triangle implements Shape
         length1 = a;
         length2 = b;
         length3 = c;
+        s = a + b + c;
     }
     public boolean cheak(double a, double b, double c){
         if(a <= 0 || b <= 0 || c <= 0){
@@ -36,7 +37,7 @@ public class Triangle implements Shape
     }
 
     public double area() {
-        return s*(s-length1)*(s-length2)*(s-length3);
+        return Math.sqrt(s*(s-length1)*(s-length2)*(s-length3));
     }
 
     public String toString() {
