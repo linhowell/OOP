@@ -9,13 +9,13 @@ public class Triangle implements Shape
     double s;
     double length1,length2,length3;
     Triangle(double a, double b, double c) throws Exception {
-        if(cheak(a, b, c)){
-            throw new ArithmeticException("It's not a Triangle!");
+        if(!cheak(a, b, c)){
+            throw new ArithmeticException("It's not a triangle!");
         }
         length1 = a;
         length2 = b;
         length3 = c;
-        s = a + b + c;
+        s = (a + b + c) / 2;
     }
     public boolean cheak(double a, double b, double c){
         if(a <= 0 || b <= 0 || c <= 0){
@@ -41,6 +41,6 @@ public class Triangle implements Shape
     }
 
     public String toString() {
-        return("Triangle" + String.valueOf(length1) + String.valueOf(length2) + String.valueOf(length3));
+        return("Triangle"+ " "  + String.valueOf(length1)+ " "  + String.valueOf(length2)+ " "  + String.valueOf(length3));
     }
 }
