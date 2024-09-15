@@ -23,6 +23,6 @@ public class Circle implements Shape {
     }
 
     public String toString() {
-        return("Circle" + String.valueOf(r));
+        return("Circle"+ " "  + String.valueOf(r));
     }
 }
