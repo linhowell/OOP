@@ -105,7 +105,7 @@ public class InputOutput {
                 return new Triangle(l1, l2, l3);
             }
             catch(Exception e){
-                throw new ArithmeticException("It's not a Triangle!");
+                throw new ArithmeticException("It's not a triangle!");
             }
         }
         else if(inf.next() == "Rectangle"){
@@ -117,7 +117,7 @@ public class InputOutput {
                 return new Rectangle(h, w);
             }
             catch(Exception e){
-                throw new ArithmeticException("It's not a Rectangle!");
+                throw new ArithmeticException("It's not a rectangle!");
             }
         }
         inf.close();
